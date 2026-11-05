@@ -170,13 +170,10 @@ batch_size: { minilm: 64, e5small: 64, bgem3: 16 }
 
 ## 4. Result Screenshots / Figures
 
-> [!NOTE]
-> The following figures are generated and saved in `outputs/figures/`. Screenshots of these should be pasted below.
-
 ### Figure 1: Performance Decomposition (Switching vs. Spelling Drop)
 📂 File: `outputs/figures/fig_decomposition.png`
 
-**[PASTE SCREENSHOT OF fig_decomposition.png HERE]**
+![Figure 1: Performance Decomposition (Switching vs. Spelling Drop)](outputs/figures/fig_decomposition.png)
 
 *Description: Stacked bar chart showing switching drop (Δ_switch) vs spelling drop (Δ_spell) per retriever × dataset. Confirms switching cost dominates for monolingual models.*
 
@@ -185,7 +182,7 @@ batch_size: { minilm: 64, e5small: 64, bgem3: 16 }
 ### Figure 2: Noise Curve (nDCG@10 vs Spelling Noise Level)
 📂 File: `outputs/figures/fig_noise_curve.png`
 
-**[PASTE SCREENSHOT OF fig_noise_curve.png HERE]**
+![Figure 2: Noise Curve (nDCG@10 vs Spelling Noise Level)](outputs/figures/fig_noise_curve.png)
 
 *Description: nDCG@10 versus spelling noise injection level (0%, 25%, 50%) for all 4 retrievers across datasets. Shows degradation profile under increasing noise.*
 
@@ -194,7 +191,7 @@ batch_size: { minilm: 64, e5small: 64, bgem3: 16 }
 ### Figure 3: Methodology Framework
 📂 File: `outputs/figures/fig_methodology_framework.png`
 
-**[PASTE SCREENSHOT OF fig_methodology_framework.png HERE]**
+![Figure 3: Methodology Framework](outputs/figures/fig_methodology_framework.png)
 
 *Description: End-to-end pipeline diagram — query generation → noise injection → normalization → retrieval evaluation.*
 
@@ -203,7 +200,7 @@ batch_size: { minilm: 64, e5small: 64, bgem3: 16 }
 ### Figure 4: Methods Ladder (Normalizer Comparison)
 📂 File: `outputs/figures/fig_methods_ladder.png`
 
-**[PASTE SCREENSHOT OF fig_methods_ladder.png HERE]**
+![Figure 4: Methods Ladder (Normalizer Comparison)](outputs/figures/fig_methods_ladder.png)
 
 *Description: Performance ladder comparing none → stop → exact → key → coarse normalizers, showing incremental gains from PhonoNorm.*
 
@@ -212,7 +209,7 @@ batch_size: { minilm: 64, e5small: 64, bgem3: 16 }
 ### Figure 5: Heatmap (nDCG@10 across retrievers × datasets)
 📂 File: `outputs/figures/fig_methods_heatmap.png`
 
-**[PASTE SCREENSHOT OF fig_methods_heatmap.png HERE]**
+![Figure 5: Heatmap (nDCG@10 across retrievers × datasets)](outputs/figures/fig_methods_heatmap.png)
 
 *Description: Color-coded heatmap of nDCG@10 performance for all conditions.*
 
@@ -221,9 +218,20 @@ batch_size: { minilm: 64, e5small: 64, bgem3: 16 }
 ### Figure 6: Normalizer Effects
 📂 File: `outputs/figures/fig_normalizer_effects.png`
 
-**[PASTE SCREENSHOT OF fig_normalizer_effects.png HERE]**
+![Figure 6: Normalizer Effects](outputs/figures/fig_normalizer_effects.png)
 
 *Description: Detailed view of how each normalizer (stop, exact, key, coarse) affects retrieval across model types.*
+
+---
+
+### Figure 7: Recovery Gap & Gain Ladder
+📂 Files: `outputs/figures/fig_methods_recovery_gap.png` & `fig_methods_gain_ladder.png`
+
+![Figure 7a: Methods Recovery Gap](outputs/figures/fig_methods_recovery_gap.png)
+
+![Figure 7b: Methods Gain Ladder](outputs/figures/fig_methods_gain_ladder.png)
+
+*Description: Detailed recovery gap relative to native English retrieval baseline, and ladder of relative gains across normalizer tiers.*
 
 ---
 
@@ -289,12 +297,14 @@ python scripts/07_figures.py
 | `outputs/tables/decomposition.csv` | Switching vs. spelling drop decomposition |
 | `outputs/tables/bootstrap_spelling_vs_switching.csv` | 10k paired bootstrap CIs |
 | `outputs/norm_stats.csv` | Token resolution statistics per dataset |
-| `outputs/figures/fig_decomposition.png` | **📸 Screenshot needed** |
-| `outputs/figures/fig_noise_curve.png` | **📸 Screenshot needed** |
-| `outputs/figures/fig_methodology_framework.png` | **📸 Screenshot needed** |
-| `outputs/figures/fig_methods_ladder.png` | **📸 Screenshot needed** |
-| `outputs/figures/fig_methods_heatmap.png` | **📸 Screenshot needed** |
-| `outputs/figures/fig_normalizer_effects.png` | **📸 Screenshot needed** |
+| `outputs/figures/fig_decomposition.png` | ✅ **Screenshot embedded in Section 4** |
+| `outputs/figures/fig_noise_curve.png` | ✅ **Screenshot embedded in Section 4** |
+| `outputs/figures/fig_methodology_framework.png` | ✅ **Screenshot embedded in Section 4** |
+| `outputs/figures/fig_methods_ladder.png` | ✅ **Screenshot embedded in Section 4** |
+| `outputs/figures/fig_methods_heatmap.png` | ✅ **Screenshot embedded in Section 4** |
+| `outputs/figures/fig_normalizer_effects.png` | ✅ **Screenshot embedded in Section 4** |
+| `outputs/figures/fig_methods_recovery_gap.png` | ✅ **Screenshot embedded in Section 4** |
+| `outputs/figures/fig_methods_gain_ladder.png` | ✅ **Screenshot embedded in Section 4** |
 
 ---
 
