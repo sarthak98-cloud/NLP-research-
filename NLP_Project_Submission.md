@@ -173,7 +173,7 @@ batch_size: { minilm: 64, e5small: 64, bgem3: 16 }
 ### Figure 1: Performance Decomposition (Switching vs. Spelling Drop)
 📂 File: `outputs/figures/fig_decomposition.png`
 
-![Figure 1: Performance Decomposition (Switching vs. Spelling Drop)](outputs/figures/fig_decomposition.png)
+![Figure 1: Performance Decomposition (Switching vs. Spelling Drop)](https://raw.githubusercontent.com/sarthak98-cloud/NLP-research-/master/outputs/figures/fig_decomposition.png)
 
 *Description: Stacked bar chart showing switching drop (Δ_switch) vs spelling drop (Δ_spell) per retriever × dataset. Confirms switching cost dominates for monolingual models.*
 
@@ -182,7 +182,7 @@ batch_size: { minilm: 64, e5small: 64, bgem3: 16 }
 ### Figure 2: Noise Curve (nDCG@10 vs Spelling Noise Level)
 📂 File: `outputs/figures/fig_noise_curve.png`
 
-![Figure 2: Noise Curve (nDCG@10 vs Spelling Noise Level)](outputs/figures/fig_noise_curve.png)
+![Figure 2: Noise Curve (nDCG@10 vs Spelling Noise Level)](https://raw.githubusercontent.com/sarthak98-cloud/NLP-research-/master/outputs/figures/fig_noise_curve.png)
 
 *Description: nDCG@10 versus spelling noise injection level (0%, 25%, 50%) for all 4 retrievers across datasets. Shows degradation profile under increasing noise.*
 
@@ -191,7 +191,7 @@ batch_size: { minilm: 64, e5small: 64, bgem3: 16 }
 ### Figure 3: Methodology Framework
 📂 File: `outputs/figures/fig_methodology_framework.png`
 
-![Figure 3: Methodology Framework](outputs/figures/fig_methodology_framework.png)
+![Figure 3: Methodology Framework](https://raw.githubusercontent.com/sarthak98-cloud/NLP-research-/master/outputs/figures/fig_methodology_framework.png)
 
 *Description: End-to-end pipeline diagram — query generation → noise injection → normalization → retrieval evaluation.*
 
@@ -200,7 +200,7 @@ batch_size: { minilm: 64, e5small: 64, bgem3: 16 }
 ### Figure 4: Methods Ladder (Normalizer Comparison)
 📂 File: `outputs/figures/fig_methods_ladder.png`
 
-![Figure 4: Methods Ladder (Normalizer Comparison)](outputs/figures/fig_methods_ladder.png)
+![Figure 4: Methods Ladder (Normalizer Comparison)](https://raw.githubusercontent.com/sarthak98-cloud/NLP-research-/master/outputs/figures/fig_methods_ladder.png)
 
 *Description: Performance ladder comparing none → stop → exact → key → coarse normalizers, showing incremental gains from PhonoNorm.*
 
@@ -209,7 +209,7 @@ batch_size: { minilm: 64, e5small: 64, bgem3: 16 }
 ### Figure 5: Heatmap (nDCG@10 across retrievers × datasets)
 📂 File: `outputs/figures/fig_methods_heatmap.png`
 
-![Figure 5: Heatmap (nDCG@10 across retrievers × datasets)](outputs/figures/fig_methods_heatmap.png)
+![Figure 5: Heatmap (nDCG@10 across retrievers × datasets)](https://raw.githubusercontent.com/sarthak98-cloud/NLP-research-/master/outputs/figures/fig_methods_heatmap.png)
 
 *Description: Color-coded heatmap of nDCG@10 performance for all conditions.*
 
@@ -218,7 +218,7 @@ batch_size: { minilm: 64, e5small: 64, bgem3: 16 }
 ### Figure 6: Normalizer Effects
 📂 File: `outputs/figures/fig_normalizer_effects.png`
 
-![Figure 6: Normalizer Effects](outputs/figures/fig_normalizer_effects.png)
+![Figure 6: Normalizer Effects](https://raw.githubusercontent.com/sarthak98-cloud/NLP-research-/master/outputs/figures/fig_normalizer_effects.png)
 
 *Description: Detailed view of how each normalizer (stop, exact, key, coarse) affects retrieval across model types.*
 
@@ -227,9 +227,9 @@ batch_size: { minilm: 64, e5small: 64, bgem3: 16 }
 ### Figure 7: Recovery Gap & Gain Ladder
 📂 Files: `outputs/figures/fig_methods_recovery_gap.png` & `fig_methods_gain_ladder.png`
 
-![Figure 7a: Methods Recovery Gap](outputs/figures/fig_methods_recovery_gap.png)
+![Figure 7a: Methods Recovery Gap](https://raw.githubusercontent.com/sarthak98-cloud/NLP-research-/master/outputs/figures/fig_methods_recovery_gap.png)
 
-![Figure 7b: Methods Gain Ladder](outputs/figures/fig_methods_gain_ladder.png)
+![Figure 7b: Methods Gain Ladder](https://raw.githubusercontent.com/sarthak98-cloud/NLP-research-/master/outputs/figures/fig_methods_gain_ladder.png)
 
 *Description: Detailed recovery gap relative to native English retrieval baseline, and ladder of relative gains across normalizer tiers.*
 
